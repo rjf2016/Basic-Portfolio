@@ -1,70 +1,238 @@
-/**
- * Float Layout Activity 
- **/
-
-* {
-  box-sizing: border-box;
-  text-align: center;
+body{
+	background-image: url("../images/cleantextilebackground.png");
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#777777;
+	position: relative;	
+	height:1000px;
+}
+footer{
+	color:lightgray;
+	position: absolute;
+	background: #666666;
+	clear:both;
+	text-align: center;
+	height: 70px;
+	width:100%;
+	bottom: 0px;
+	border-top: 10px solid #4aaaa5;
+}
+footer p{
+	position: absolute;
+	bottom: 10px;
+	right: 50px;
+	left: 50px;
 }
 
-/* INSTRUCTOR: Here is the filled out version of the float activity*/
 
-body {
-	font-size: 24px;
-	line-height: 32px;
-	color: #333;
+a{
+	color: #666666;
 }
-header {
-	background: #ccc;
-	padding: 20px;
-	margin-bottom: 20px;
-	color: #333;
+
+a:hover { color: blue; }
+
+h2{
+	color:#4aaaa5;
+	margin: 10 auto;
 }
-section {
-	padding: 20px;
-	background: #ccc;
-	margin-bottom: 20px;
+.Header{
+	font-family:'Georgia', Times, Times New Roman, serif;	
+	position:relative;
+	height:65px;
+	background:#ffffff;
+	color: #ffffff;	
+	width:100%;
+	border-bottom: 2px solid #cccccc;
+	border-top:1000px;
+	margin:0 auto;
+	top:0px;
+	text-align: center;
 }
-#left {
-	float: left;
-	width: 33.3%;
-	background: #666;
-	color: #fff;
+.myname{
+	background:#4aaaa5;
+	width: 300px;
+	height:100%;
+	position:absolute;
+	bottom:0px;
+	left:30px;
+	color:#ffffff;
 }
-#middle {
-	float: left;
-	width: 33.3%;
-	background: #888;
-	color: #fff;
+.nav{
+	position: absolute;
+	background:#ffffff;
+	right:30px;
+	top:20px;
+	text-align:center;
 }
-#right {
-	float: left;
-	width: 33.3%;
-	background: #666;
-	color: #fff;
+
+.mainbody{
+	clear:both;
+	position:relative;
+	top: 0px;
+	width: 960px;
+	height:560px;
+	padding-top:50px;
+	padding-bottom:60px;
+	margin: 0 auto;
 }
-#full {
-	clear: both;
-	width: 100%;
-	background: #eee;
-	overflow: auto;
+
+.box{
+	position:absolute;
+	bottom:35px;
+	right:15px;
 }
-#division {
-	background: #6ea3da;
-	padding: 20px;
-	margin-top: 20px;
+
+.box img{
+	height:65px;
+	width:65px;
+	padding: 5px;
 }
-aside {
-	float: left;
-	width: 33%;
-	margin-left: 30px;
-	padding: 20px;
-	height: 200px;
-	background: #fff;
-	border: 1px solid #eee;
+
+.mypic{
+	height: 331px;
+	width:300px;
+	float:left;
+	padding-left: 20px;
+	padding-right:20px;
 }
-footer {
-	background: #ccc;
-	padding: 20px;
-	clear: both;
+.float{
+	float:left;
+	height:100%;
+	width:8px;
+}
+.paragraph{
+	border: 10px;
+	border-top:2px;
+	width:600px;
+	right:120px;
+	line-height:2;
+	word-wrap: break-word;
+}
+.icon-links{
+	height:200px;
+	width:268px;
+	float:right;
+	position:absolute;
+	text-align: center;
+	right:0px;
+	color:#4aaaa5;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+.content-aboutme{
+	background:#ffffff;
+	border: 1px #dddddd solid;
+	position: absolute;
+	width: 620px;
+	height:672px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align:left;
+}
+
+.content-portfolio{
+	background:#ffffff;
+	border: 1px #dddddd solid;
+	position: absolute;
+	width: 620px;
+	height:622px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align:left;
+}
+.content-contact{
+	background:#ffffff;
+	border: 1px #dddddd solid;
+	position:absolute;
+	width: 620px;
+	height:472px;
+
+	
+	text-align:left;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+}
+.h2{
+	padding-left:30px;
+}
+.line{
+	border: 1px #dddddd solid;
+	margin-bottom:10px;
+	width:cal(50%);
+}
+.form{
+	width: 500px;
+	padding-right: 0px;
+	padding-left: 25px;
+}
+
+.form-button{
+	background:#4aaaa5;
+	color:#ffffff;
+	width:100px;
+	height:30px;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: large;
+}
+.form-button:focus{
+	background:lightgray;
+}
+.inputtext{
+    width: calc(100%);
+    margin:0;
+    height:30px;
+    float:left;
+}
+.inputtext:focus{
+	background:lightgray;
+}
+
+.messagetext{
+    width: calc(100%);
+    margin:0;
+    padding:0;
+    height:200px;
+    float:left;
+    padding: 0 6px;
+}
+
+.messagetext:focus{
+	background: lightgray ;
+}
+
+.projects{
+	float:left;
+	position: relative;
+	height: 140px;
+	width: 215px;
+	margin: 20px;
+	left:10px;
+}
+
+.projects img{
+	position:absolute;
+	width:215px;
+	height:140px;
+}
+.project_name{
+	position: absolute;
+	width:100%;
+	height:35px;
+	left:10px;
+	bottom:20px;
+	background-color: #4aaaa5;;
+	text-align: center;
+	font-weight:normal;
+	color:#ffffff;
+	margin:-10px;
+}
+
+.project_name span{
+	position: absolute;
+	top: 10px;
+	right:25px;
+	left:25px;
 }
